@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        /* Falling hearts */
+        .heart {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6b81;
+            opacity: 0.8;
+            border-radius: 50%;
+            animation: fall 5s infinite, sway 2s infinite alternate;
+        }
+        .heart:before, .heart:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6b81;
+            opacity: 0.8;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -10px;
+            left: 5px;
+        }
+        .heart:after {
+            left: -10px;
+            top: 5px;
+        }
+        @keyframes fall {
+            0% {
+                top: -10%;
+                left: calc(50% - 10px);
+                opacity: 1;
+            }
+            100% {
+                top: 110%;
+                left: calc(50% + 50px);
+                opacity: 0;
+            }
+        }
+        @keyframes sway {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(15deg);
+            }
+        }
+        /* Falling images */
+        .falling-image {
+            position: fixed;
+            top: -20%;
+            width: 80px;
+            height: auto;
+            animation: fall-images 7s infinite;
+            opacity: 0.8;
+        }
+        @keyframes fall-images {
+            0% {
+                top: -10%;
+                left: calc(10% + 20px);
+                opacity: 1;
+            }
+            100% {
+                top: 110%;
+                left: calc(90% - 20px);
+                opacity: 0;
+            }
+        }
+        /* Add scrollable area */
+        .scrollable-content {
+            padding: 50px 0;
+        }
+
+        .text{
+            background-color: gray;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Happy Anniversary! ❤️</h1>
+            <p>Every moment with you is a treasure. Here's to many more memories together!</p>
+            <div class="gallery">
+                <img src="img/Screenshot 2024-10-31 125005.png" alt="Image 1">
+                <img src="img/64e7c97e-1d32-4f24-bacd-e4bbbce8ee9c.jpg" alt="Image 2">
+                <img src="img/472827017_28143384525276991_5366513009375181042_n.jpg" alt="Image 3">
+                <img src="img/cfb5e3c3-c0fa-430b-b24f-eeef78673e53.jpg" alt="Image 4">
+                <img src="img/6df0f3c0-f0a8-4f9f-b52b-fe99ff47f30e.jpg" alt="Image 5">
+                <img src="img/2160efe9-5652-4cef-afab-34fb29f97037.jpg" alt="Image 6">
+                <img src="img/472828386_642313184909746_856624728008034071_n.jpg" alt="Image 7">
+                <img src="img/Screenshot 2025-01-12 103043.png" alt="Image 8">
+            </div>
+            <p class="footer">With all my love, [Kritsanon]</p>
+        </div>
+        <button onclick="alert('รักเธอที่สุด! 💕')">กดเพื่อบอกรัก</button>
+
+    <!--เล่นเพลง-->
+    <div class="audio-container">
+        <h3>เล่นเพลงพิเศษ</h3>
+        <audio controls>
+            <source src="lol/Morvasu x Violette Wautier - ดูดฝุ่น (home.) [Official Performance Video].mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+
+        <div class="container">
+            <h1>รักเธอที่สุดดด</h1>
+            <p>Scroll down to see more!</p>
+            <div class="gallery">
+                <img src="img/3b4663124eca375e342a97181abaed92.jpg" alt="Image 9">
+             <div class="text">
+                    "สุขสันต์วันครบรอบนะแฟนสุดที่รักของเค้า ❤️
+                ในวันนี้ที่เรามองย้อนกลับไป เค้าอยากจะบอกว่า ทุกช่วงเวลาที่ได้ใช้ร่วมกับเธอคือสิ่งที่ฉันอยากเก็บไว้ในหัวใจตลอดไป ไม่ใช่แค่ช่วงเวลาที่มีความสุข
+                ขอบคุณที่เธอเป็นทั้งกำลังใจ เป็นเพื่อนและเป็นที่พึ่งพิงในทุกๆเรื่อง 
+                        เค้ารักเธอไม่ใช่เพียงเพราะเธอดูแลเค้า แต่เพราะเธอทำให้เค้าอยากจะเป็นคนที่ดียิ่งขึ้นในทุกๆ วัน แค่ได้เห็นรอยยิ้มของเธอ มันก็เพียงพอที่จะทำให้วันที่ธรรมดากลายเป็นวันที่แสนพิเศษ
+                เค้ายังจำวันแรกที่เราได้พบกันได้ดี เหมือนว่ามันเพิ่งเกิดขึ้นเมื่อวาน แต่ความจริงแล้วเรามาไกลแค่ไหนกันแล้วนะ ไม่ว่าจะเป็นเสียงหัวเราะ ความทรงจำดีๆ ทุกสิ่งเหล่านี้ทำให้เค้ารู้ว่า ชีวิตเค้าจะไม่สมบูรณ์แบบเลยถ้าไม่มีเธอ
+                ในวันพิเศษนี้ เค้าอยากให้เธอรู้ว่า เธอไม่ใช่แค่ส่วนหนึ่งของชีวิตเค้า แต่เธอคือหัวใจและจิตวิญญาณของเค้า เธอทำให้เค้ารู้ว่าการรักใครสักคนด้วยหัวใจทั้งดวงมันเป็นอย่างไร และเค้าสัญญาว่าจะดูแลความรักนี้ให้ดีที่สุด
+                ขอบคุณที่เป็นเธอ ขอบคุณที่รักเค้าในแบบที่เค้าเป็น และขอบคุณที่เลือกจะเดินไปพร้อมกับเค้า เค้าหวังว่าเราจะยังคงสร้างความทรงจำที่ดีนี้ด้วยกันอีกหลายปี รักเธอเสมอและตลอดไป 💕"
+
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Falling hearts -->
+    <div class="heart" style="left: 20%; animation-duration: 4s;"></div>
+    <div class="heart" style="left: 50%; animation-duration: 6s;"></div>
+    <div class="heart" style="left: 80%; animation-duration: 5s;"></div>
+
+    <!-- Falling images -->
+    <img src="img/473259789_529149463514009_8471345653116569022_n.jpg" class="falling-image" style="animation-duration: 8s; left: 30%;">
+    <img src="img/e01ed757-c7c5-4633-a160-8f5131c42e99.jpg" class="falling-image" style="animation-duration: 10s; left: 60%;">
+
+</body>
+</html>
